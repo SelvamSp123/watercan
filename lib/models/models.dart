@@ -1,4 +1,4 @@
-class Seller {
+xclass Seller {
   final String name;
   final double rating;
   final int reviews;

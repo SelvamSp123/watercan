@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+ximport 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import 'checkout_screen.dart';
 
@@ -85,7 +85,7 @@ class _CartScreenState extends State<CartScreen> {
           _row('Total Amount', '₹$total', bold: true),
           const SizedBox(height: 16),
           ElevatedButton(
-            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => CheckoutScreen(total: total))),
+            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => CheckoutScreen(total: total, depositAmount: depositTotal))),
             child: const Text('Proceed to Checkout'),
           ),
         ],
